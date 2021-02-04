@@ -1,0 +1,11 @@
+ #!/usr/bin/env ruby
+
+ require "bundler/setup"
+ require "country_cli"
+
+ #api = Api.new("https://restcountries.eu/rest/v2")
+
+ #api.search_country_by_name("USA")
+
+ cli = Cli.new 
+ cli.test
