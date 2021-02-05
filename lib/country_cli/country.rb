@@ -2,8 +2,8 @@ require "pry"
 
 class Country 
 
-attr_accessor  :region, :name
-attr_reader :population, :callingCodes
+attr_accessor  :region, :name, :subregion, :borders, :capital, :languages
+attr_reader :population, :callingCodes, :currencies
    
 @@all = []
    
@@ -13,11 +13,19 @@ def initialize(hash)
     #"@#{k}= #{v}"
  #x = "@#{k.to_s} = #{v}"
 
-
-
 end 
- @@all << self
+@@all << self
+ #create_callingCodes(self.callingCodes)
+ #self.safe
 end 
+
+#def create_callingCodes(callingCodes_arr)
+ # puts "please wait your data is loading..."
+  #api = Api.new
+  #callingCodes_objs = callingCodes_arr.map do |country_callingCodes|
+   # api.search_country_info_by_callingCodes(country_callingCodes)
+    #self.callingCodes = callingCodes_objs
+#end
    
 def save 
   @@all << self
@@ -39,6 +47,10 @@ end
 
 def callingCodes=(callingCodes)
     @callingCodes = callingCodes 
+end
+
+def currencies=(currencies)
+  @currencies = currencies
 end
 
 end
