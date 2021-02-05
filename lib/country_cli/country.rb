@@ -53,5 +53,9 @@ def currencies=(currencies)
   @currencies = currencies
 end
 
+def self.find_by_callingCodes(input_callingCodes)
+  Country.all.select {|country| country.code == input_callingCodes}
+end
+
 end
    
