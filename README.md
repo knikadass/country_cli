@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+This is to finda all the data needed when looking up a country.
 
 ## Development
 
