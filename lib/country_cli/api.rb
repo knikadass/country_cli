@@ -1,7 +1,3 @@
-#https://restcountries.eu/rest/v2/region{region}
-#https://restcountries.eu/rest/v2/callingcode/{callingcode}
-#https://restcountries.eu/rest/v2/alpha/{name}
-
 
 
 class Api
@@ -30,17 +26,13 @@ class Api
   }
 
   country = Country.new(country_hash)
-  #binding.pry
-  #puts country.currencies
+  
 
    end
 
 end
 
 
-#api = Api.new("https://restcountries.eu/rest/v2")
-
-#api.search_country_by_name("USA")
 
 
 

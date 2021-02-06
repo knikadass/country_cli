@@ -33,7 +33,6 @@ class Cli
         puts "please pick a country? or type 'country' to see the information"
         input = gets.strip.downcase
         if input != nil || input != "exit" || input != "list"
-          #puts "looking in the database. input:#{input}"
           country = country_api.search_country_by_name(input)
           country_exists?(country)
         elsif input == "list"
