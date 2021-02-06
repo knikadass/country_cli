@@ -19,13 +19,6 @@ end
  #self.safe
 end 
 
-#def create_callingCodes(callingCodes_arr)
- # puts "please wait your data is loading..."
-  #api = Api.new
-  #callingCodes_objs = callingCodes_arr.map do |country_callingCodes|
-   # api.search_country_info_by_callingCodes(country_callingCodes)
-    #self.callingCodes = callingCodes_objs
-#end
    
 def save 
   @@all << self
@@ -33,6 +26,17 @@ end
    
 def self.all 
   @@all
+end
+
+def info_country
+  puts "region: #{self.region}"
+  puts "population: #{self.population}"
+  puts "callingCodes: #{self.callingCodes}"
+  puts "borders: #{self.borders}"
+  puts "subregion: #{self.subregion}"
+  puts "capital: #{self.capital}"
+  puts "languages: #{self.languages}"
+  puts "currencies: #{self.currencies}"
 end
 
 private
@@ -51,10 +55,6 @@ end
 
 def currencies=(currencies)
   @currencies = currencies
-end
-
-def self.find_by_callingCodes(input_callingCodes)
-  Country.all.select {|country| country.code == input_callingCodes}
 end
 
 end

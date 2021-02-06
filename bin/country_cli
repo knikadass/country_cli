@@ -1,8 +1,8 @@
  #!/usr/bin/env ruby
 
  require "bundler/setup"
- require "country_cli'
+ require_relative "../lib/country_cli"
 
 
 cli = Cli.new
-cli.test
+cli.run
