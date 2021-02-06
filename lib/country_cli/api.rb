@@ -7,7 +7,7 @@
 class Api
   attr_accessor :url
 
-  def initialize(url)
+  def initialize()
     @url = "https://restcountries.eu/rest/v2"
   end
 

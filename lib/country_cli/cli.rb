@@ -16,7 +16,7 @@ class Cli
         end
     end
 
-    end
+    
 
     def get_database_by_name(input, country_api)
         if input ≠ "list"
@@ -44,6 +44,7 @@ class Cli
 end 
      puts "Comeback again!"
     end
+  end
   
 
 
